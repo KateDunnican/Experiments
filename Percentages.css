@@ -1,21 +1,51 @@
+*{
+    box-sizing: border-box;
+}
 html{
     height: 100%;
     width: 100%;
     background: coral;
 }
 
-body{
-    margin: 0;
-    background: lightseagreen;
-    display: flex;
-    /*flex-direction: row;*/
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+    body{
+        margin: 0;
+        background: lightseagreen;
+        height: 100%;
+    }
 
-#div1{
-    height: 50vh;
-    width: 50vw;
-    background: white;
-}
+        nav{
+            height: 7%;
+        }
+
+        .container{
+            background: rgba(125, 207, 196, 0.77);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 87%;
+        }
+            #div1{
+                height: 30%;
+                width: 50% ;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #div2{
+                height: 30vh;
+                width: 50vw;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        footer{
+            height: 6%;
+            background: darkgrey;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
