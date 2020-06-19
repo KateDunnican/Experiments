@@ -1,5 +1,10 @@
 public class InterviewProblems {
+    // Problems to work on:
+    public static void FizzBuzz(int x){} // Fizzbuzz with int x input
 
+
+
+    // Finished Problems:
     public static void FibSequence(){
         int x = 0,
             y = 1,
@@ -15,7 +20,7 @@ public class InterviewProblems {
             x=y;
             y=z;
         }
-    } // Prints out the Fibonacci Sequence
+    } // Prints out the Fibonacci Sequence to whatever number
 
     public static void CoinProblem(int x){
         if ((x / 5) >= 1){
@@ -51,6 +56,7 @@ public class InterviewProblems {
 
 
 
+    // Main for testing:
     public static void main(String[] args) {
         FibSequence();
         CoinProblem(32);
