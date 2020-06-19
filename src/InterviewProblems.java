@@ -1,9 +1,9 @@
 public class InterviewProblems {
 
     public static void FibSequence(){
-        int x=0,
-                y=1,
-                z;
+        int x = 0,
+            y = 1,
+            z;
 
         System.out.println(x);
         System.out.println(y);
@@ -15,7 +15,7 @@ public class InterviewProblems {
             x=y;
             y=z;
         }
-    }
+    } // Prints out the Fibonacci Sequence
 
     public static void CoinProblem(int x){
         if ((x / 5) >= 1){
@@ -47,7 +47,9 @@ public class InterviewProblems {
                 }
             }
         }
-    }
+    } // Makes change using coins of 5, 3, 1
+
+
 
     public static void main(String[] args) {
         FibSequence();
