@@ -1,6 +1,5 @@
 public class InterviewProblems {
     // Problems to work on:
-    public static void FizzBuzz(int x){} // Fizzbuzz with int x input
 
 
 
@@ -54,11 +53,28 @@ public class InterviewProblems {
         }
     } // Makes change using coins of 5, 3, 1
 
+    public static void FizzBuzz(){
+        for (int i = 1; i < 101; ++i){
+            if (i % 15 == 0){
+                System.out.println("FizzBuzz");
+            }
+            else if (i % 3 == 0){
+                System.out.println("Fizz");
+            }
+            else if (i % 5 == 0){
+                System.out.println("Buzz");
+            }
+            else{
+                System.out.println(i);
+            }
+        }
+    } // Fizzbuzz
 
 
     // Main for testing:
     public static void main(String[] args) {
         FibSequence();
         CoinProblem(32);
+        FizzBuzz();
     }
 }
