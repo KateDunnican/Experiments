@@ -1,7 +1,4 @@
 public class InterviewProblems {
-    // Problems to work on:
-
-
 
     // Finished Problems:
     public static void FibSequence(){
@@ -70,11 +67,26 @@ public class InterviewProblems {
         }
     } // Fizzbuzz
 
+    public static void Weird(int x){
+        if(x % 2 != 0){
+            System.out.println("Weird");
+        }
+        else{
+            if((2 <= x) && (x <= 5)){
+                System.out.println("Not Weird");
+            }
+            if((6 <= x) && (x <= 20)){
+                System.out.println("Weird");
+            }
+            if(x > 20){
+                System.out.println("Not Weird");
+            }
+        }
+    }
+
 
     // Main for testing:
     public static void main(String[] args) {
-        FibSequence();
-        CoinProblem(32);
-        FizzBuzz();
+
     }
 }
