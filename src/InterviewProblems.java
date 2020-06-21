@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class InterviewProblems {
 
     // Finished Problems:
@@ -82,11 +84,36 @@ public class InterviewProblems {
                 System.out.println("Not Weird");
             }
         }
-    }
+    } // Tells you if x is "Weird" or "Not Weird"
 
+    public static void NotesOnPrint(){
+        for(int i=0;i<3;i++){
+            String x = "Test";
+            int y = 45;
+
+            // print
+                //
+            // println()
+                //
+            // printf()
+                // printf("the string that includes the format rules", thing for slot 1, thing for slot 2, etc...)
+
+                // %s (string)
+                // %d (decimal integers)
+                // %f (floating point nums)
+                // %t (date/time values)
+                // %b (boolean)
+
+                //
+                System.out.printf("%-15s%03d%n", x, y);
+        }
+    }
 
     // Main for testing:
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        NotesOnPrint();
 
     }
 }
