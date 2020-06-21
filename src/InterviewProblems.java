@@ -96,15 +96,17 @@ public class InterviewProblems {
             // println()
                 //
             // printf()
+                // https://www.cs.colostate.edu/~cs160/.Summer16/resources/Java_printf_method_quick_reference.pdf
+                // https://www.baeldung.com/java-printstream-printf
+                // https://www.java67.com/2014/10/how-to-pad-numbers-with-leading-zeroes-in-Java-example.html
+
                 // printf("the string that includes the format rules", thing for slot 1, thing for slot 2, etc...)
+                    // %s (string)
+                    // %d (decimal integers)
+                    // %f (floating point nums)
+                    // %t (date/time values)
+                    // %b (boolean)
 
-                // %s (string)
-                // %d (decimal integers)
-                // %f (floating point nums)
-                // %t (date/time values)
-                // %b (boolean)
-
-                //
                 System.out.printf("%-15s%03d%n", x, y);
         }
     }
@@ -112,8 +114,6 @@ public class InterviewProblems {
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        NotesOnPrint();
 
     }
 }
