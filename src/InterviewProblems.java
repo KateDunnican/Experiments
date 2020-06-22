@@ -109,7 +109,13 @@ public class InterviewProblems {
 
                 System.out.printf("%-15s%03d%n", x, y);
         }
-    }
+    } // All about different ways to print stuff
+
+    public static void MathLoop(int x){
+        for (int i = 1; i < 11; ++i){
+            System.out.println(x + " * " + i  + " = " + (x * i));
+        }
+    } // Basic loop through multiplications
 
     // Main for testing:
     public static void main(String[] args) {
