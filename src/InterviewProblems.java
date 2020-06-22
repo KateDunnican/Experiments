@@ -117,9 +117,24 @@ public class InterviewProblems {
         }
     } // Basic loop through multiplications
 
+    public static void MathLoop2(int q, int a, int b, int n){
+        for (int i = 0; i < q; ++i){
+            int total = a;
+            for (int l = 1; l <= n; ++l){
+                for (int x = l-1; x < l; ++x){
+                    int bToTheNth = b * ((int)(Math.pow(2, x)));
+                    total = total + bToTheNth;
+                }
+                System.out.print(total + " ");
+            }
+            System.out.println("");
+        }
+    } // An infinite, mind bending, disgusting pile of loops!
+
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        MathLoop2(2, 0, 2, 10);
     }
 }
