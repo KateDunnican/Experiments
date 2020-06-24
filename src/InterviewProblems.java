@@ -131,10 +131,31 @@ public class InterviewProblems {
         }
     } // An infinite, mind bending, disgusting pile of loops!
 
+    public static void InputTypes(int x, long y){
+        // byte: 8-bit signed integer
+        // short: 16-bit signed integer
+        // int: 32-bit signed integer
+        // long: 64-bit signed integer
+
+        for(int i=0;i<x;i++){
+            try {
+                System.out.println(y+" can be fitted in:");
+                if(y>=-128 && y<=127)System.out.println("* byte");
+                if(y>=-32768 && y<=32767)System.out.println("* short");
+                if(y>=-2147483648 && y<=2147483647)System.out.println("* int");
+                if(y>2147483647 || y<-2147483648)System.out.println("* long");
+            }
+            catch(Exception e) {
+                System.out.println(y+" can't be fitted anywhere.");
+            }
+
+        }
+
+    } // Works w byte, short, int, and long
 
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        MathLoop2(2, 0, 2, 10);
+        InputTypes(5, 300);
     }
 }

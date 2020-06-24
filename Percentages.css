@@ -1,15 +1,15 @@
 *{
-    box-sizing: border-box; <!-- Important -->
+    box-sizing: border-box;
 }
 html{
-    height: 100%; <!-- Important -->
-    width: 100%; <!-- Important -->
+    height: 100%;
+    width: 100%;
     background: coral;
 }
 
     body{
-        margin: 0; <!-- Important -->
-        height: 100%; <!-- Important -->
+        margin: 0;
+        height: 100%;
         background: lightseagreen;
     }
 
