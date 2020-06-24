@@ -132,30 +132,28 @@ public class InterviewProblems {
     } // An infinite, mind bending, disgusting pile of loops!
 
     public static void InputTypes(int x, long y){
-        // byte: 8-bit signed integer
-        // short: 16-bit signed integer
-        // int: 32-bit signed integer
-        // long: 64-bit signed integer
-
         for(int i=0;i<x;i++){
             try {
                 System.out.println(y+" can be fitted in:");
                 if(y>=-128 && y<=127)System.out.println("* byte");
                 if(y>=-32768 && y<=32767)System.out.println("* short");
                 if(y>=-2147483648 && y<=2147483647)System.out.println("* int");
-                if(y>2147483647 || y<-2147483648)System.out.println("* long");
+                if(y>=-9223372036854775808L && y<=9223372036854775807L)System.out.println("* long");
             }
             catch(Exception e) {
                 System.out.println(y+" can't be fitted anywhere.");
+                // this part doesn't really work cause you can't enter anything
+                // as long y if it is greater than a long.  Mod this to use
+                // scanner.next() instead of y for it to work.
             }
 
         }
 
-    } // Works w byte, short, int, and long
+    } // Tells you which types y could fit into
 
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        InputTypes(5, 300);
+
     }
 }
