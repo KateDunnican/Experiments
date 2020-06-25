@@ -166,6 +166,31 @@ public class InterviewProblems {
         }
     } // Reads scanner till EOF
 
+    public static void StaticBlock (){
+        // MUST move everything outside of method for it to work
+        static Scanner scanner = new Scanner(System.in);
+        static int B;
+        static int H;
+        static boolean flag;
+
+        static{
+            B = scanner.nextInt();
+            H = scanner.nextInt();
+
+            if (B >= 0 && H >= 0){
+                flag = true;
+            }
+            else{
+                System.out.println("java.lang.Exception: Breadth and height must be positive");
+            }
+        }
+
+    } // Static block exercise
+
+
+
+
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
