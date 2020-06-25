@@ -151,9 +151,23 @@ public class InterviewProblems {
 
     } // Tells you which types y could fit into
 
+    public static void EndOfFile(String n){
+        Scanner scanner = new Scanner(n); // should be System.in if working in main
+        int x = 1;
+        for (int i = 1; i <= x; ++i){
+            if (scanner.hasNext()){
+                System.out.println(i + " " + scanner.nextLine());
+                ++x;
+            }
+            else {
+                scanner.close();
+                break;
+            }
+        }
+    } // Reads scanner till EOF
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
     }
 }
