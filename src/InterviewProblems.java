@@ -177,7 +177,7 @@ public class InterviewProblems {
             B = scanner.nextInt();
             H = scanner.nextInt();
 
-            if (B >= 0 && H >= 0){
+            if (B > 0 && H > 0){
                 flag = true;
             }
             else{
@@ -187,7 +187,10 @@ public class InterviewProblems {
 
     } // Static block exercise
 
-
+    public static void ToString (int x){
+        String y = x + ""; // this works
+        String z = Integer.toString(x); // this also works
+    } // change int to string
 
 
 
