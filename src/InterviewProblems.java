@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class InterviewProblems {
@@ -168,22 +169,22 @@ public class InterviewProblems {
 
     public static void StaticBlock (){
         // MUST move everything outside of method for it to work
-        static Scanner scanner = new Scanner(System.in);
-        static int B;
-        static int H;
-        static boolean flag;
-
-        static{
-            B = scanner.nextInt();
-            H = scanner.nextInt();
-
-            if (B > 0 && H > 0){
-                flag = true;
-            }
-            else{
-                System.out.println("java.lang.Exception: Breadth and height must be positive");
-            }
-        }
+//        static Scanner scanner = new Scanner(System.in);
+//        static int B;
+//        static int H;
+//        static boolean flag;
+//
+//        static{
+//            B = scanner.nextInt();
+//            H = scanner.nextInt();
+//
+//            if (B > 0 && H > 0){
+//                flag = true;
+//            }
+//            else{
+//                System.out.println("java.lang.Exception: Breadth and height must be positive");
+//            }
+//        }
 
     } // Static block exercise
 
@@ -192,10 +193,14 @@ public class InterviewProblems {
         String z = Integer.toString(x); // this also works
     } // change int to string
 
+    public static void GetDay(int month, int day, int year){
+        System.out.println(LocalDate.of(year, month, day).getDayOfWeek().name());
+    } // Converts date into day of week
 
 
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        GetDay(8, 5, 2015);
     }
 }
