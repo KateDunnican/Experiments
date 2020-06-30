@@ -1,4 +1,6 @@
+import java.text.NumberFormat;
 import java.time.LocalDate;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class InterviewProblems {
@@ -197,10 +199,23 @@ public class InterviewProblems {
         System.out.println(LocalDate.of(year, month, day).getDayOfWeek().name());
     } // Converts date into day of week
 
+    public static void Currency (double x){
+        Locale INDIA = new Locale("en", "IN");
+
+        String us = NumberFormat.getCurrencyInstance(Locale.US).format(x);
+        String india = NumberFormat.getCurrencyInstance(INDIA).format(x);
+        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(x);
+        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(x);
+
+        System.out.println("US: " + us);
+        System.out.println("India: " + india);
+        System.out.println("China: " + china);
+        System.out.println("France: " + france);
+    } // Converts currency into different forms
 
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GetDay(8, 5, 2015);
+        Currency(12324.134);
     }
 }
