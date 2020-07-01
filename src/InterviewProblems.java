@@ -223,6 +223,25 @@ public class InterviewProblems {
         class Adder extends Arithmetic{}
     } // Covers basic inheritance
 
+    public static void AbstractClasses(){
+        // remove from AbstractClasses method to use
+        abstract class Book{
+            String title;
+            abstract void setTitle(String s);
+            String getTitle(){
+                return title;
+            }
+        }
+        class MyBook extends Book{
+            public void setTitle(String s){
+                this.title = s;
+            }
+            String getTitle(){
+                return title;
+            }
+        }
+    } // Covers basics of abstracts
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
