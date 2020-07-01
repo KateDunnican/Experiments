@@ -213,9 +213,19 @@ public class InterviewProblems {
         System.out.println("France: " + france);
     } // Converts currency into different forms
 
+    public static void InheritanceII(){
+        // remove from InheritanceII method to use, it serves as storage container
+        class Arithmetic {
+            public int add (int x, int y){
+                return x + y;
+            }
+        }
+        class Adder extends Arithmetic{}
+    } // Covers basic inheritance
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Currency(12324.134);
+
     }
 }
