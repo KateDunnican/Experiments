@@ -242,6 +242,25 @@ public class InterviewProblems {
         }
     } // Covers basics of abstracts
 
+    public static void Interfaces(){
+        // remove from Interfaces method to use, it serves as storage container
+
+//        interface AdvancedArithmetic{
+//            int divisor_sum(int n);
+//        }
+//        class MyCalculator implements AdvancedArithmetic{
+//            public int divisor_sum(int n){
+//                int answer = 0;
+//                for (int i=1;i<=n;i++) {
+//                    if (n%i==0){
+//                        answer += i;
+//                    }
+//                }
+//                return (answer);
+//            }
+//        }
+    } // Covers basics of interfaces
+
     // Main for testing:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
